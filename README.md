@@ -17,7 +17,7 @@ You must have GemStone/64 version 3.6.2 or later installed and running.
 
 2. Set the envirnoment variable POSTGRES_LIB to reference the ***full path*** to the Postgres shared library (this is only needed during installation. Once initialized, GCfP remembers where this library is located).
 ```
-export POSTGRES_LIB=/usr/lib/libpq.so
+export POSTGRES_LIB=/usr/lib/x86_64-linux-gnu/libpq.so.5
 ```
 
 3. cd to the src directory
