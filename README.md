@@ -132,7 +132,7 @@ object, or execute insert, update, or delete operations on rows in Postgres.
 
 To run the unit tests, you first need to install the unit tests (see step 5-C above) and create a writable Postgres database. Use the createdb Postgres command to create database:
 ```
-/usr/local/pgsql/bin/createdb test
+/usr/bin/createdb test
 ```
 
 Next you need to edit the class method named #defaultParameters in class PostgresTestCase to reference the data you just created:
