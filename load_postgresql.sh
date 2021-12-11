@@ -45,16 +45,17 @@ nowTS=`date +%Y-%m-%d-%H-%M`
 
 export POSTGRES_LIB=/usr/lib/x86_64-linux-gnu/libpq.so.5
 
+cd $CURRENTDIR
 cd src
 
 cat << EOF | $GEMSTONE/bin/topaz -T 4000000 -l -u loadpostgresql  2>&1 >> $CURRENTDIR/loadPostgreSQL_${nowTS}.log
-set user DataCurator pass $GEMSTONE_CURATOR_PASS gems $GEMSTONE_NAME
+set user SystemUser pass $GEMSTONE_CONFIG_PASS gems $GEMSTONE_NAME
 display oops
 iferror where
 
 login
 
-input install.into.globals.topaz
+input install.topaz
 input install.tests.topaz
 
 output pop
