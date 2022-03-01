@@ -18,7 +18,7 @@ You must have Postgres installed. GCfP was built and tested on Linux using Postg
 
 ### GemStone/S 64 Bit
 
-You must have GemStone/64 version 3.6.2 or later installed and running.
+You must have GemStone/64 version 3.6.3 or later installed and running.
 
 ## Installation
 
