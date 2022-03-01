@@ -132,6 +132,7 @@ params := (GsPostgresConnectionParameters new)
 | connection |
 connection := GsPostgresConnection
 				newWithParameters: params.
+connection connect
 ```
 
 3. Now you have an active connection to Postgres. You can use it to execute queries on Postgres which return a GsPostgresReadStream
