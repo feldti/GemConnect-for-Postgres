@@ -42,6 +42,19 @@ GsTestCase subclass: 'PostgresTestCase'
 
 %
 set compile_env: 0
+! ------------------- Class definition for WidgetWithReadOnlyStrings
+expectvalue /Class
+doit
+WidgetWithStrings subclass: 'WidgetWithReadOnlyStrings'
+  instVarNames: #()
+  classVars: #()
+  classInstVars: #()
+  poolDictionaries: #()
+  inDictionary: (UserGlobals at: #GcfpInstallDict)
+  options: #()
+
+%
+set compile_env: 0
 ! ------------------- Class definition for WidgetWithStringsOldColumnMap
 expectvalue /Class
 doit
@@ -60,6 +73,19 @@ expectvalue /Class
 doit
 WidgetWithUnicode subclass: 'WidgetWithUnicodeOldColumnMap'
   instVarNames: #()
+  classVars: #()
+  classInstVars: #()
+  poolDictionaries: #()
+  inDictionary: (UserGlobals at: #GcfpInstallDict)
+  options: #()
+
+%
+set compile_env: 0
+! ------------------- Class definition for TestNullTupleObject
+expectvalue /Class
+doit
+Object subclass: 'TestNullTupleObject'
+  instVarNames: #( exitCode)
   classVars: #()
   classInstVars: #()
   poolDictionaries: #()
