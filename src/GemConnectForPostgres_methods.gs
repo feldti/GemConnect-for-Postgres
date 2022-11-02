@@ -3414,7 +3414,7 @@ createInstanceOf: aClass fromFloatString: aString
 						ifTrue: [str add: char]
 						ifFalse: [rs position == (rs size - 2) ifTrue: [str add: char]]]]
 		ifFalse: [str := rs upToEnd]. "Not a currency, just create the class from what we have"
-	^aClass fromStringLocaleC: str
+	^aClass  fromStringLocaleC: str
 %
 category: 'Converting'
 classmethod: GsPostgresResult
